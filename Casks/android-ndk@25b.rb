@@ -1,4 +1,4 @@
-cask "android-ndk" do
+cask "android-ndk@25b" do
   version "25b"
   sha256 "fc41bab49d4c1fe9239bfd06e4eb7cda8348635aaa3568fec942f43a9d5eb04b"
 
