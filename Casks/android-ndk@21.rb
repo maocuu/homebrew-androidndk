@@ -1,13 +1,13 @@
-cask 'android-ndk' do
-  version '21'
-  sha256 'b82a49ec591d6f283acc7a241a8c56a14788320bf85a3375b5f2309b3b0c9b45'
+cask "android-ndk" do
+  version "21"
+  sha256 "b82a49ec591d6f283acc7a241a8c56a14788320bf85a3375b5f2309b3b0c9b45"
 
   # dl.google.com/android/repository/android-ndk was verified as official when first introduced to the cask
   url "https://dl.google.com/android/repository/android-ndk-r#{version}-darwin-x86_64.zip"
-  name 'Android NDK'
-  homepage 'https://developer.android.com/ndk/index.html'
+  name "Android NDK"
+  homepage "https://developer.android.com/ndk/index.html"
 
-  conflicts_with cask: 'crystax-ndk'
+  conflicts_with cask: "crystax-ndk"
 
   # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
   shimscript = "#{staged_path}/ndk_exec.sh"
