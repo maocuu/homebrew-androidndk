@@ -30,7 +30,7 @@ cask 'android-ndk@14b' do
     ndk-which
   ].each { |link_name| binary shimscript, target: link_name }
 
-  caveats <<-EOS.undent
+  caveats <<-EOS
    You may want to add to your profile:
       'export ANDROID_NDK_HOME="#{HOMEBREW_PREFIX}/opt/android-ndk"'
   EOS
