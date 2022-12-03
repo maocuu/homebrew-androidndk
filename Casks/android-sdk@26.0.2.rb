@@ -66,7 +66,7 @@ cask 'android-sdk@26.0.2' do
     FileUtils.rm("#{HOMEBREW_PREFIX}/share/android-sdk")
   end
 
-  caveats <<-EOS.undent
+  caveats <<-EOS
     We will install android-sdk-tools, platform-tools, and build-tools for you.
     You can control android sdk packages via the sdkmanager command.
     You may want to add to your profile:
