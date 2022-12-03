@@ -14,7 +14,7 @@ cask 'android-ndk@14b' do
   preflight do
     FileUtils.ln(staged_path.to_s, "#{HOMEBREW_PREFIX}/opt/android-ndk", force: true)
 
-    IO.write shimscript, <<-EOS.undent
+    IO.write shimscript, <<-EOS
       #!/bin/bash
       readonly executable="#{staged_path}/android-ndk-r#{version}/$(basename ${0})"
       test -f "${executable}" && exec "${executable}" "${@}"
